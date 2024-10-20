@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.lottery-box {
+    height: 80vh;
+    width: 80%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 20px;
+    transition: 1s all;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 10px;
+    overflow: auto;
+}
+.lottery-box:hover {
+    box-shadow: 0 0 7px rgb(23, 80, 156);;
+}
+.button-box {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button {
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(23, 80, 156);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+button:hover {
+    transform: scale(1.1);
+}
+.ball {
+    background-image: url(../images/lottery-ball.png);
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    
+}
